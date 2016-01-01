@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Program(models.Model):
-       title = models.CharField(max_length=100)
+   title = models.CharField(max_length=100)
    event_type = models.CharField(max_length=100, default='No Information')
    description = models.CharField(max_length=1024)
    entry_fee = models.CharField(max_length=512, default='No Information')
