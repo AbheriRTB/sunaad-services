@@ -24,4 +24,4 @@ class Program(models.Model):
    location_mapcoords = models.CharField(max_length=100, default='0,0')
    location_parking = models.CharField(max_length=100, default='No Information')
    location_eataries = models.CharField(max_length=100, default='No Information')
-   image = models.ImageField('Label', upload_to='path/')
+   artiste_image = models.CharField(max_length=512, default='', blank=True, null=True)
