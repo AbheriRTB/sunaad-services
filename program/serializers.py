@@ -28,5 +28,7 @@ class ProgramSerializer(serializers.ModelSerializer):
                         'location_mapcoords',
                         'location_parking',
                         'location_eataries',
-                        'artiste_image')
+                        'artiste_image',
+                        'is_featured',
+                        'splash_url')
 
