@@ -13,7 +13,7 @@ class ProgramList(APIView):
     List all users, or create a new user.
     """
     def get(self, request, format=None):
-        programs = Program.objects.all()
+        programs = Program.objects.all().order_by('event_date')
         serializer = ProgramSerializer(programs, many=True)
         return Response(serializer.data)
 
